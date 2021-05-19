@@ -1,0 +1,20 @@
+.omrs-alerts-container {
+  z-index: 100000;
+  position: fixed;
+  width: 100%;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.omrs-alert-mounting,
+.omrs-alert-mounting > * {
+  padding: 0;
+}
+
+.omrs-alert-closing,
+.omrs-alert-mounting {
+  opacity: 0;
+}

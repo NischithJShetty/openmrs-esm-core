@@ -5,6 +5,7 @@ import {
   createAppState,
   Config,
   provide,
+  renderAlerts,
   showToast,
   renderToasts,
   integrateBreakpoints,
@@ -182,6 +183,10 @@ function createConfigLoader(configUrls: Array<string>) {
     )
   );
   return () => loadingConfigs.then(loadConfigs);
+}
+
+function showAlert() {
+  return renderAlerts(document.querySelector(".omrs-alerts-container"));
 }
 
 function showToasts() {
